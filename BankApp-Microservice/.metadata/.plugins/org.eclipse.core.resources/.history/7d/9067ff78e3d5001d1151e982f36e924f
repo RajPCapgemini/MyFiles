@@ -1,0 +1,39 @@
+server:
+  port: 3333
+  servlet:
+    context-path: /account
+ 
+spring:
+  application:
+    name: BankApp-AccountService
+    
+  
+ 
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: create
+    properties:
+       hibernate:
+            dialect: org.hibernate.dialect.MySQL8Dialect
+                                      
+eureka:
+  client:
+    service-url : 
+            defaultZone: http://localhost:1111/eureka/          
+            
+    register-with-eureka: true
+    fetch-registry: true 
+ 
+  instance:
+    prefer-ip-address: true
+    
+axon:
+  eventhandling:
+    processors:
+      name:
+        mode: tracking
+        
+  distributed:
+    enabled: true
+ 

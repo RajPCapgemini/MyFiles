@@ -1,0 +1,13 @@
+package com.cg.bankapp.query.services;
+
+import com.cg.bankapp.query.entities.Transaction;
+
+public class TransactionQueryServiceImpl implements TransactionQueryService{
+
+	@Override
+	public Transaction getAllTransactionDetails(int accountNo) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

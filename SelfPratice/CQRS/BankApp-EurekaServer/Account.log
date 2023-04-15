@@ -1,0 +1,98 @@
+2023-04-03T10:33:43.173+05:30  INFO 19288 --- [restartedMain] c.c.b.BankAppEurekaServerApplication     : Starting BankAppEurekaServerApplication using Java 17.0.4.1 with PID 19288 (C:\Users\RAPRIYAD\Documents\Microservices\BankApp-EurekaServer\target\classes started by rapriyad in C:\Users\RAPRIYAD\Documents\Microservices\BankApp-EurekaServer)
+2023-04-03T10:33:43.176+05:30  INFO 19288 --- [restartedMain] c.c.b.BankAppEurekaServerApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-04-03T10:33:43.214+05:30  INFO 19288 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-03T10:33:43.215+05:30  INFO 19288 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-03T10:33:44.107+05:30  INFO 19288 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=db7de20a-d082-3ce4-a91f-f958a521cda3
+2023-04-03T10:33:44.480+05:30  INFO 19288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1111 (http)
+2023-04-03T10:33:44.489+05:30  INFO 19288 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-03T10:33:44.490+05:30  INFO 19288 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-03T10:33:44.556+05:30  INFO 19288 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-03T10:33:44.556+05:30  INFO 19288 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1333 ms
+2023-04-03T10:33:45.231+05:30  INFO 19288 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2023-04-03T10:33:45.232+05:30  INFO 19288 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2023-04-03T10:33:45.364+05:30  INFO 19288 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2023-04-03T10:33:45.364+05:30  INFO 19288 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2023-04-03T10:33:46.583+05:30  INFO 19288 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-03T10:33:46.653+05:30  INFO 19288 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-04-03T10:33:46.684+05:30  WARN 19288 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-04-03T10:33:46.700+05:30  INFO 19288 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-04-03T10:33:46.722+05:30  INFO 19288 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-04-03T10:33:46.722+05:30  INFO 19288 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2023-04-03T10:33:46.729+05:30  INFO 19288 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1680498226727 with initial instances count: 0
+2023-04-03T10:33:46.757+05:30  INFO 19288 --- [restartedMain] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2023-04-03T10:33:46.759+05:30  WARN 19288 --- [restartedMain] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2023-04-03T10:33:46.771+05:30  INFO 19288 --- [restartedMain] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2023-04-03T10:33:46.771+05:30  INFO 19288 --- [restartedMain] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2023-04-03T10:33:46.776+05:30  INFO 19288 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2023-04-03T10:33:46.833+05:30  INFO 19288 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BANKAPP-EUREKASERVER with eureka with status UP
+2023-04-03T10:33:46.843+05:30  INFO 19288 --- [Thread-15] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2023-04-03T10:33:46.843+05:30  INFO 19288 --- [Thread-15] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2023-04-03T10:33:46.843+05:30  INFO 19288 --- [Thread-15] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2023-04-03T10:33:46.843+05:30  INFO 19288 --- [Thread-15] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2023-04-03T10:33:46.844+05:30  INFO 19288 --- [Thread-15] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2023-04-03T10:33:46.851+05:30  INFO 19288 --- [Thread-15] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2023-04-03T10:33:46.860+05:30  INFO 19288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 1111 (http) with context path ''
+2023-04-03T10:33:46.861+05:30  INFO 19288 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 1111
+2023-04-03T10:33:46.934+05:30  INFO 19288 --- [restartedMain] c.c.b.BankAppEurekaServerApplication     : Started BankAppEurekaServerApplication in 4.169 seconds (process running for 4.862)
+2023-04-03T10:33:47.170+05:30  INFO 19288 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 2e3cb21ab7c1
+2023-04-03T10:34:46.845+05:30  INFO 19288 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-04-03T10:35:46.861+05:30  INFO 19288 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 15ms
+2023-04-03T10:36:27.691+05:30  INFO 19288 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-03T10:36:27.694+05:30  INFO 19288 --- [Thread-7] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application BANKAPP-EUREKASERVER with eureka with status DOWN
+2023-04-03T10:36:27.705+05:30  INFO 19288 --- [Thread-7] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-03T10:36:27.715+05:30  INFO 19288 --- [Thread-7] o.s.c.n.e.server.EurekaServerBootstrap   : Shutting down Eureka Server..
+2023-04-03T10:36:27.717+05:30  INFO 19288 --- [Thread-7] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2023-04-03T10:36:27.724+05:30  INFO 19288 --- [Thread-7] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2023-04-03T10:36:27.725+05:30  INFO 19288 --- [Thread-7] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka Service is now shutdown...
+2023-04-03T10:36:27.726+05:30  INFO 19288 --- [Thread-7] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2023-04-03T10:36:27.728+05:30  INFO 19288 --- [Thread-7] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2023-04-03T10:36:27.734+05:30  INFO 19288 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-04-03T10:36:27.735+05:30  INFO 19288 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2023-04-03T10:36:27.857+05:30  INFO 19288 --- [restartedMain] c.c.b.BankAppEurekaServerApplication     : Starting BankAppEurekaServerApplication using Java 17.0.4.1 with PID 19288 (C:\Users\RAPRIYAD\Documents\Microservices\BankApp-EurekaServer\target\classes started by rapriyad in C:\Users\RAPRIYAD\Documents\Microservices\BankApp-EurekaServer)
+2023-04-03T10:36:27.857+05:30  INFO 19288 --- [restartedMain] c.c.b.BankAppEurekaServerApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-04-03T10:36:28.132+05:30  INFO 19288 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=db7de20a-d082-3ce4-a91f-f958a521cda3
+2023-04-03T10:36:28.171+05:30  INFO 19288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1111 (http)
+2023-04-03T10:36:28.171+05:30  INFO 19288 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-03T10:36:28.172+05:30  INFO 19288 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-03T10:36:28.198+05:30  INFO 19288 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-03T10:36:28.198+05:30  INFO 19288 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 339 ms
+2023-04-03T10:36:28.322+05:30  INFO 19288 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2023-04-03T10:36:28.322+05:30  INFO 19288 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2023-04-03T10:36:28.322+05:30  INFO 19288 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2023-04-03T10:36:28.322+05:30  INFO 19288 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2023-04-03T10:36:28.816+05:30  INFO 19288 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-03T10:36:28.875+05:30  INFO 19288 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-04-03T10:36:28.888+05:30  WARN 19288 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-04-03T10:36:28.891+05:30  INFO 19288 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-04-03T10:36:28.892+05:30  INFO 19288 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-04-03T10:36:28.892+05:30  INFO 19288 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2023-04-03T10:36:28.892+05:30  INFO 19288 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1680498388892 with initial instances count: 0
+2023-04-03T10:36:28.894+05:30  INFO 19288 --- [restartedMain] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2023-04-03T10:36:28.895+05:30  WARN 19288 --- [restartedMain] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2023-04-03T10:36:28.901+05:30  INFO 19288 --- [restartedMain] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2023-04-03T10:36:28.902+05:30  INFO 19288 --- [restartedMain] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2023-04-03T10:36:28.905+05:30  INFO 19288 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2023-04-03T10:36:28.932+05:30  INFO 19288 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BANKAPP-EUREKASERVER with eureka with status UP
+2023-04-03T10:36:28.933+05:30  INFO 19288 --- [Thread-28] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2023-04-03T10:36:28.933+05:30  INFO 19288 --- [Thread-28] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2023-04-03T10:36:28.933+05:30  INFO 19288 --- [Thread-28] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2023-04-03T10:36:28.933+05:30  INFO 19288 --- [Thread-28] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2023-04-03T10:36:28.933+05:30  INFO 19288 --- [Thread-28] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2023-04-03T10:36:28.938+05:30  INFO 19288 --- [Thread-28] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2023-04-03T10:36:28.939+05:30  INFO 19288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 1111 (http) with context path ''
+2023-04-03T10:36:28.940+05:30  INFO 19288 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 1111
+2023-04-03T10:36:29.024+05:30  INFO 19288 --- [restartedMain] c.c.b.BankAppEurekaServerApplication     : Started BankAppEurekaServerApplication in 1.252 seconds (process running for 166.953)
+2023-04-03T10:36:29.028+05:30  INFO 19288 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-03T10:36:29.040+05:30  INFO 19288 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 2e3cb21ab7c1
+2023-04-03T10:37:28.933+05:30  INFO 19288 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-04-03T10:38:19.316+05:30  INFO 19288 --- [RMI TCP Connection(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-04-03T10:38:19.317+05:30  INFO 19288 --- [RMI TCP Connection(8)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application BANKAPP-EUREKASERVER with eureka with status DOWN
+2023-04-03T10:38:19.326+05:30  INFO 19288 --- [RMI TCP Connection(8)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-03T10:38:19.329+05:30  INFO 19288 --- [RMI TCP Connection(8)-127.0.0.1] o.s.c.n.e.server.EurekaServerBootstrap   : Shutting down Eureka Server..
+2023-04-03T10:38:19.330+05:30  INFO 19288 --- [RMI TCP Connection(8)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2023-04-03T10:38:19.335+05:30  INFO 19288 --- [RMI TCP Connection(8)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2023-04-03T10:38:19.335+05:30  INFO 19288 --- [RMI TCP Connection(8)-127.0.0.1] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka Service is now shutdown...
+2023-04-03T10:38:19.335+05:30  INFO 19288 --- [RMI TCP Connection(8)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2023-04-03T10:38:19.339+05:30  INFO 19288 --- [RMI TCP Connection(8)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2023-04-03T10:38:19.347+05:30  INFO 19288 --- [RMI TCP Connection(8)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-04-03T10:38:19.348+05:30  INFO 19288 --- [RMI TCP Connection(8)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;BankServerAuthenticationService&apos; to &apos;BankApp-AuthenticationService&apos;&#x0D;&#x0A;- Original element: &apos;BankServerAuthenticationService&apos;&#x0D;&#x0A;- Renamed element: &apos;BankServerAuthenticationService&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;BankServerAuthenticationService&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=BankServerAuthenticationService" name="BankApp-AuthenticationService" references="true" stamp="1681282195080" version="1.0"/>
+</session>

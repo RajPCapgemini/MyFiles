@@ -1,0 +1,171 @@
+version: "3.8"
+services:
+  #AxonServer
+  axonservercontainer-service:
+    container_name: axonserverservice-container
+    image: axoniq/axonserver:latest
+    hostname: axonserver
+    networks:
+      springboot-mysql-net:
+
+  #RedisApplication
+  rediscontainer-service:
+    container_name: redisservice-container
+    image: redis/redis-stack-server:latest
+    networks:
+      springboot-mysql-net:
+
+  #AdminServer
+  adminservercontainer-service:
+    container_name: adminserver-container
+    build:
+      context: ./BankApp-AdminServer
+      dockerfile: Dockerfile
+    ports:
+      - "9090:9090"
+    networks:
+      springboot-mysql-net:
+    restart: on-failure
+  #Eureka
+  eurekacontainer-service:
+    container_name: eurekaservice-container
+    build:
+      context: ./BankApp-EurekaServer
+      dockerfile: Dockerfile
+    ports:
+      - "1111:1111"
+    networks:
+      springboot-mysql-net:
+    restart: on-failure
+    
+  #GatewayAPI
+  gatewayapicontainer-service:
+    container_name: gatewayapiservice-container
+    build:
+      context: ./BankApp-API-Gateway
+      dockerfile: Dockerfile
+    ports:
+      - "5555:5555"
+    depends_on:
+      - eurekacontainer-service
+      - axonservercontainer-service
+    networks:
+      springboot-mysql-net:
+    restart: on-failure
+
+  #Auth-Server
+  authserverdb-service:
+    container_name: authserverdb-docker-container
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: customerdbd
+    networks:
+      springboot-mysql-net:
+
+
+  authservercontainer-service:
+    container_name: authserverservice-container
+    build:
+      context: ./BankApp-AuthenticationService
+      dockerfile: Dockerfile
+    ports:
+      - "9012:9012"
+    depends_on:
+      - rediscontainer-service
+      - axonservercontainer-service
+      - eurekacontainer-service
+      - gatewayapicontainer-service
+    networks:
+      springboot-mysql-net:
+    restart: on-failure
+      
+  #Customer
+  customerdb-service:
+    container_name: customerdb-docker-container
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: customerdbd
+    networks:
+      springboot-mysql-net:
+   
+  customercontainer-service:
+    container_name: customerservice-container
+    build:
+      context: ./BankApp-CustomerService
+      dockerfile: Dockerfile
+    ports:
+      - "2222:2222"
+    depends_on:
+      - axonservercontainer-service
+      - rediscontainer-service
+      - adminservercontainer-service
+      - eurekacontainer-service
+      - gatewayapicontainer-service
+      - authservercontainer-service
+      - customerdb-service
+    networks:
+      springboot-mysql-net:
+    restart: on-failure
+    
+  #Account
+  accountdb-service:
+    container_name: accountdb-docker-container
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: accountdb
+    networks:
+      springboot-mysql-net:
+   
+  accountcontainer-service:
+    container_name: accountservice-container
+    build:
+      context: ./BankApp-AccountService
+      dockerfile: Dockerfile
+    ports:
+      - "3333:3333"
+    depends_on:
+      - axonservercontainer-service
+      - rediscontainer-service
+      - adminservercontainer-service
+      - eurekacontainer-service
+      - gatewayapicontainer-service
+      - authservercontainer-service
+      - accountdb-service
+    networks:
+      springboot-mysql-net:
+    restart: on-failure
+    
+  #Transaction
+  transactiondb-service:
+    container_name: transactiondb-docker-container
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: transactiondb
+    networks:
+      springboot-mysql-net:
+   
+  transactioncontainer-service:
+    container_name: transactionservice-container
+    build:
+      context: ./BankApp-TransactionService
+      dockerfile: Dockerfile
+    ports:
+      - "4444:4444"
+    depends_on:
+      - axonservercontainer-service
+      - rediscontainer-service
+      - adminservercontainer-service
+      - eurekacontainer-service
+      - gatewayapicontainer-service
+      - authservercontainer-service
+      - transactiondb-service
+    networks:
+      springboot-mysql-net:
+    restart: on-failure
+
+networks:
+  springboot-mysql-net:

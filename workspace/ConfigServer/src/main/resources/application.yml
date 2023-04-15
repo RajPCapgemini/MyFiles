@@ -1,0 +1,17 @@
+server: 
+  port: 4444
+  
+  
+spring:
+  cloud:
+    config:
+      name: Configserver
+      server:
+        git:
+          uri: https://github.com/CG-FS-ABL/RajP-ConfigMaster.git
+          clone-on-start: true
+          default-label: main
+          username: RajPCapgemini
+          password: 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
+          skipSslValidation: true
+     

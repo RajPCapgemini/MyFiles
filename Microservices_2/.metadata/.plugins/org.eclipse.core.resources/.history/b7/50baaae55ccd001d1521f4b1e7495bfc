@@ -1,0 +1,64 @@
+package com.cg.bankapp.dto;
+
+
+public class TransactionDto {
+
+	private String transactionDate;
+	private String transactionType;
+	private double transactionAmount;
+	private int accountNo;
+	
+	public TransactionDto() {
+		super();
+	}
+
+	public TransactionDto(String transactionDate, String transactionType, double transactionAmount,
+			int accountNo) {
+		super();
+		this.transactionDate = transactionDate;
+		this.transactionType = transactionType;
+		this.transactionAmount = transactionAmount;
+		this.accountNo = accountNo;
+	}
+
+	public String getTransactionDate() {
+		return transactionDate;
+	}
+
+	public void setTransactionDate(String transactionDate) {
+		this.transactionDate = transactionDate;
+	}
+
+	public String getTransactionType() {
+		return transactionType;
+	}
+
+	public void setTransactionType(String transactionType) {
+		this.transactionType = transactionType;
+	}
+
+	public double getTransactionAmount() {
+		return transactionAmount;
+	}
+
+	public void setTransactionAmount(double transactionAmount) {
+		this.transactionAmount = transactionAmount;
+	}
+
+	public int getAccountNo() {
+		return accountNo;
+	}
+
+	public void setAccountNo(int accountNo) {
+		this.accountNo = accountNo;
+	}
+
+	@Override
+	public String toString() {
+		return "TransactionDto [transactionDate=" + transactionDate + ", transactionType=" + transactionType
+				+ ", transactionAmount=" + transactionAmount + ", accountNo=" + accountNo + "]";
+	}
+	
+	
+
+}

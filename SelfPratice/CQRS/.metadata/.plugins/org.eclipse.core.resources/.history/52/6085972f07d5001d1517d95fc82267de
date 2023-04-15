@@ -1,0 +1,13 @@
+package com.cg.bankapp.query.services;
+
+import com.cg.bankapp.query.entities.Account;
+
+public class AccountQueryServiceImpl implements AccountQueryService{
+
+	@Override
+	public Account getAccountDetails(int accountNo) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

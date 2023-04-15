@@ -1,0 +1,82 @@
+package com.cg.bankapp.command.aggregate;
+
+import java.time.LocalDateTime;
+
+import org.axonframework.commandhandling.CommandHandler;
+import org.axonframework.eventsourcing.EventSourcingHandler;
+import org.axonframework.modelling.command.AggregateIdentifier;
+import org.axonframework.modelling.command.AggregateLifecycle;
+import org.axonframework.spring.stereotype.Aggregate;
+import org.springframework.beans.BeanUtils;
+
+import com.cg.bankapp.command.AccountCreateCommand;
+import com.cg.bankapp.command.AccountUpdateCommand;
+import com.cg.bankapp.command.AccountUpdateRolledBackCommand;
+import com.cg.bankapp.command.events.AccountCreateEvent;
+import com.cg.bankapp.command.events.AccountUpdateEvent;
+import com.cg.bankapp.command.events.AccountUpdateRolledBackEvent;
+
+import lombok.Data;
+
+@Data
+@Aggregate
+public class AccountAggregate {
+
+	@AggregateIdentifier
+	private String uid;
+	private int transactionId;
+	private String transactionType;
+	private LocalDateTime transactionDate;
+	private double transactionAmount;
+	private int accountNo;
+	private double balance;
+	private int customerId;
+	
+	@CommandHandler
+	public AccountAggregate(AccountCreateCommand accountCommand) {
+		AccountCreateEvent accountCreateEvent = new AccountCreateEvent();
+		BeanUtils.copyProperties(accountCommand, accountCreateEvent);
+		AggregateLifecycle.apply(accountCreateEvent);
+	}
+	@EventSourcingHandler
+	public void accountCreateEventSourcingHandler(AccountCreateEvent accountCreateEvent) {
+		this.accountNo=accountCreateEvent.getAccountNo();
+		this.uid=accountCreateEvent.getUid();
+		this.balance=accountCreateEvent.getBalance();
+		this.customerId=accountCreateEvent.getCustomerId();
+	}
+	
+	@CommandHandler
+	public AccountAggregate(AccountUpdateCommand command) {
+		AccountUpdateEvent event = new AccountUpdateEvent();
+		BeanUtils.copyProperties(command, event);
+		AggregateLifecycle.apply(event);
+	}
+	@EventSourcingHandler
+	public void accountUpdateEventSourcingHandler(AccountUpdateEvent event) {
+		this.accountNo=event.getAccountNo();
+		this.uid=event.getUid();
+		this.balance=event.getBalance();
+		this.customerId=event.getCustomerId();
+	}
+	
+	@CommandHandler
+	public AccountAggregate(AccountUpdateRolledBackCommand command) {
+		System.out.println("---->Inside AccountUpdaterolledBackCommand aggregate");
+		AccountUpdateRolledBackEvent event = new AccountUpdateRolledBackEvent();
+		BeanUtils.copyProperties(command, event);
+		AggregateLifecycle.apply(event);
+	}
+	
+	@EventSourcingHandler
+	public void accountUpdateRolledBackEventHandler(AccountUpdateRolledBackEvent event) {
+		this.uid=event.getUid();
+		this.accountNo=event.getAccountNo();
+		this.customerId=event.getCustomerId();
+		this.transactionId=event.getTransactionId();
+		this.balance=event.getBalance();
+		this.transactionAmount=event.getTransactionAmount();
+		this.transactionDate=event.getTransactionDate();
+		this.transactionType=event.getTransactionType();
+	}
+}

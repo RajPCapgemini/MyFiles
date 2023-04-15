@@ -1,0 +1,8 @@
+package com.cg.bankapp.command.aggregate;
+
+import org.axonframework.spring.stereotype.Aggregate;
+
+@Aggregate
+public class TransactionCommandAggregate {
+
+}

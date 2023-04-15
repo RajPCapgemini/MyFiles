@@ -1,0 +1,68 @@
+package com.cg.bankapp.command.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.BeanUtils;
+import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.cg.bankapp.command.entities.Account;
+import com.cg.bankapp.command.service.AccountCommandService;
+import com.cg.bankapp.dtos.AccountDTO;
+import com.cg.bankapp.dtos.FundTransferDTO;
+import com.cg.bankapp.dtos.TransactionDTO;
+import com.cg.bankapp.exceptions.AccountDetailsNotFoundException;
+import com.cg.bankapp.exceptions.HighValueTransactionException;
+import com.cg.bankapp.exceptions.InsufficientFundsException;
+import com.cg.bankapp.exceptions.InvalidCustomerIdException;
+import com.cg.bankapp.exceptions.NegativeAmountException;
+
+@RestController
+public class AccountCommnadController {
+	
+	@Autowired
+	private AccountCommandService service;
+	
+	@PostMapping(value="/addAccountDetails",consumes = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<AccountDTO> addAccountDetails(@RequestBody AccountDTO request) throws BeansException, InvalidCustomerIdException{
+		Account account = new Account();
+		BeanUtils.copyProperties(request, account);
+		AccountDTO response = new AccountDTO();
+		BeanUtils.copyProperties(service.addAccountDetails(account), response);
+		return new ResponseEntity<AccountDTO>(response,HttpStatus.OK);
+	}
+	
+	@PostMapping(value="/withdrawAmount",consumes=MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<AccountDTO> withdrawAmount(@RequestBody TransactionDTO request) throws BeansException, AccountDetailsNotFoundException, HighValueTransactionException, NegativeAmountException, InsufficientFundsException{
+		AccountDTO response = new AccountDTO();
+		BeanUtils.copyProperties(service.withdrawAmount(request.getAccountNo(), request.getTransactionAmount()), response) ;
+		return new ResponseEntity<AccountDTO>(response,HttpStatus.OK);
+	}
+	
+	@PostMapping(value="/depositAmount",consumes=MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<AccountDTO> depositAmount(@RequestBody TransactionDTO request) throws BeansException, AccountDetailsNotFoundException, HighValueTransactionException, NegativeAmountException{
+		AccountDTO response = new AccountDTO();
+		BeanUtils.copyProperties(service.depositAmount(request.getAccountNo(), request.getTransactionAmount()), response) ;
+		return new ResponseEntity<AccountDTO>(response,HttpStatus.OK);
+	}
+	
+	@PostMapping(value="/fundsTransfer",consumes=MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<List<AccountDTO>> fundTransfer(@RequestBody FundTransferDTO request) throws AccountDetailsNotFoundException, HighValueTransactionException, NegativeAmountException, InsufficientFundsException{
+		List<AccountDTO> response = new ArrayList<AccountDTO>();
+		List<Account> accountList = service.fundTransfer(request.getFromAccountNo(), request.getToAccountNo(), request.getAmount());
+		for(Account account : accountList) {
+			AccountDTO accountDTO = new AccountDTO();
+			BeanUtils.copyProperties(account, accountDTO);
+			response.add(accountDTO);
+		}
+		return new ResponseEntity<List<AccountDTO>>(response,HttpStatus.OK);
+	}
+	
+}

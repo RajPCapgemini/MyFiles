@@ -1,0 +1,53 @@
+server:
+  port: 2222
+  servlet:
+    context-path: /customer
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:1111/eureka
+  instance:
+    hostname: localhost
+
+ 
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:9090
+  application:
+    name: BankApp-CustomerService
+  datasource:
+    url: jdbc:mysql://localhost:3306/bankAppCustomerDB
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+    
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+       hibernate:
+            dialect: org.hibernate.dialect.MySQL8Dialect
+           
+          
+  
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+        
+logging:
+  file:
+    name: Account.log
+  logback:
+    rollingpolicy:
+      max-history: 5
+      max-file-size: 10MB      

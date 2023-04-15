@@ -1,0 +1,24 @@
+package com.cg.bankapp.exceptionhandler;
+
+import org.axonframework.commandhandling.CommandExecutionException;
+import org.axonframework.queryhandling.QueryExecutionException;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+
+
+@ControllerAdvice
+public class CustomExceptionHandler {
+
+	@ExceptionHandler
+	public ResponseEntity<String> handleQueryExecutionException(QueryExecutionException e) {
+		return new ResponseEntity<>(e.getMessage()+"-query-",HttpStatus.NOT_FOUND);
+	}
+	
+	@ExceptionHandler
+	public ResponseEntity<String> handlerCommandExecutionException(Exception e){
+		return new ResponseEntity<>(e.getLocalizedMessage(),HttpStatus.BAD_REQUEST);
+	}
+	
+}

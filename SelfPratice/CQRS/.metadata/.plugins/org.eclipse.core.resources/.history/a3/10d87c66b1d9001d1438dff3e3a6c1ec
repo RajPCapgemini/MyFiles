@@ -1,0 +1,5 @@
+package com.cg.bankapp.exceptions;
+
+public class BankServerDownException {
+
+}

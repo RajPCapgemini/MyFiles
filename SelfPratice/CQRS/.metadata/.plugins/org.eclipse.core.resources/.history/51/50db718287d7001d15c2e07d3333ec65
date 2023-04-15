@@ -1,0 +1,43 @@
+server:
+  port: 4444
+  servlet:
+    context-path: /transaction
+ 
+spring:
+  application:
+    name: BankApp-TransactionService
+    
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/bankApp-Transaction-Command-DB?createDatabaseIfNotExist=true
+    username: root
+    password: root
+ 
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+    properties:
+       hibernate:
+            dialect: org.hibernate.dialect.MySQL8Dialect
+                                      
+eureka:
+  client:
+    service-url : 
+            defaultZone: http://localhost:1111/eureka/          
+            
+    register-with-eureka: true
+    fetch-registry: true 
+ 
+  instance:
+    prefer-ip-address: true
+    
+axon:
+  eventhandling:
+    processors:
+      name:
+        mode: tracking
+        
+  distributed:
+    enabled: true
+ 

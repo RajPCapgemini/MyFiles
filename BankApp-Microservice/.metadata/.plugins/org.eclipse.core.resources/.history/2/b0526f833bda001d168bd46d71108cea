@@ -1,0 +1,61 @@
+package com.cg.bankapp.command.service;
+import java.util.UUID;
+
+import org.axonframework.commandhandling.gateway.CommandGateway;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
+import org.springframework.stereotype.Component;
+import org.springframework.web.client.RestTemplate;
+
+import com.cg.bankapp.command.CustomerCreateCommand;
+import com.cg.bankapp.command.entities.Customer;
+import com.cg.bankapp.command.repositories.CustomerCommandRepository;
+import com.cg.bankapp.dtos.CustomerDTO;
+import com.cg.bankapp.dtos.UserDTO;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+
+@Component
+public class CustomerCommandServiceImpl implements CustomerCommandService{
+
+		@Autowired private CommandGateway commandGateway;
+	
+		@Autowired private CustomerCommandRepository repository;
+		
+		@Autowired private RestTemplate restTemplate;
+
+		@Override
+		public CustomerDTO addCustomerDetails(CustomerDTO customerDTO) {
+			Customer customer = new Customer();
+			customer.setFirstName(customerDTO.getFirstName());
+			customer.setLastName(customerDTO.getLastName());
+			customer = repository.save(customer);
+			CustomerCreateCommand customerCommand = CustomerCreateCommand.builder()
+						.id(customer.getId())
+						.uid(UUID.randomUUID().toString())
+						.firstName(customer.getFirstName())
+						.lastName(customer.getLastName())
+						.build();
+			commandGateway.sendAndWait(customerCommand);
+			
+			customerAuthentication(new UserDTO(customer.getId(), customerDTO.getUsername(),customerDTO.getPassword()));
+			
+			return customerDTO;
+		}
+
+		private void customerAuthentication(UserDTO userDTO) {
+			try {
+				String uriEndPoint="http://AUTH-SERVER/auth/add";
+				String jsonData = new ObjectMapper().registerModule(new JavaTimeModule()).writeValueAsString(userDTO);
+				HttpHeaders headers = new HttpHeaders();
+				headers.setContentType(MediaType.APPLICATION_JSON);
+				
+				HttpEntity<String> httpEntity = new HttpEntity<String>(jsonData,headers);
+				restTemplate.postForObject(uriEndPoint, httpEntity, UserDTO.class);
+			} catch (Exception e) {
+				
+			}
+		}	
+}

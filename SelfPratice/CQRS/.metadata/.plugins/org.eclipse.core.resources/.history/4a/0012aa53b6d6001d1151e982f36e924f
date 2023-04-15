@@ -1,0 +1,10 @@
+package com.cg.bankapp.command;
+
+import org.axonframework.modelling.command.TargetAggregateIdentifier;
+
+public class AccountUpdateCommand {
+
+	@TargetAggregateIdentifier
+	private String uid;
+	private double balance;
+}

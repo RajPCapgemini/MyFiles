@@ -1,0 +1,9 @@
+package com.cg.bankapp.query.repositories;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.cg.bankapp.query.entities.Transaction;
+
+public interface TransactionQueryRepository extends JpaRepository<Transaction, Integer>{
+
+}

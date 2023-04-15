@@ -1,0 +1,22 @@
+package com.cg.bankapp.command.aggregate;
+
+import org.axonframework.commandhandling.CommandHandler;
+import org.axonframework.modelling.command.AggregateIdentifier;
+import org.axonframework.spring.stereotype.Aggregate;
+
+import com.cg.bankapp.command.AccountCreateCommand;
+
+@Aggregate
+public class AccountAggregate {
+
+	@AggregateIdentifier
+	private String uid;
+	private int id;
+	private double balance;
+	private int customerId;
+	
+	@CommandHandler
+	public AccountAggregate(AccountCreateCommand accountCommand) {
+		
+	}
+}

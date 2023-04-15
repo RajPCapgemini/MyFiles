@@ -1,0 +1,8 @@
+package com.cg.bankapp.command.service;
+
+import com.cg.bankapp.command.entities.Account;
+
+public interface AccountCommandService {
+	public Account addAccountDetails(Account account);
+	public double withdrawAmount(int accountNo, double amount);
+}

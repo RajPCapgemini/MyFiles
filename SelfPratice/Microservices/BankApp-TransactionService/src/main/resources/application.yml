@@ -1,0 +1,66 @@
+server:
+  port: 4444
+  servlet:
+    context-path: /transaction
+  
+
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:9090
+        instance:
+          prefer-ip: true
+  application:
+    name: BankApp-TransactionService
+  datasource:
+    url: jdbc:mysql://localhost:3306/bankAppTransactionDB
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+    
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+       hibernate:
+            dialect: org.hibernate.dialect.MySQL5Dialect
+            
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka
+    fetch-registry: true
+    register-with-eureka: true
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+        
+logging:
+  level:
+    ROOT: INFO
+    org:
+      springframework:
+        orm:
+          jpa: DEBUG
+        transaction: DEBUG
+      hibernate:
+        engine:
+          transaction:
+            internal:
+              TransactionalImpl: DEBUG
+  file:
+    name: Transaction.log
+  logback:
+    rollingpolicy:
+      max-history: 5
+      max-file-size: 10MB    

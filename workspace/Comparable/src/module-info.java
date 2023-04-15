@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author rapriyad
+ *
+ */
+module Comparable {
+}

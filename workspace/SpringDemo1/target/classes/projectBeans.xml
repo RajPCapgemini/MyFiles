@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+		
+		<!--<bean id="timeService" class="com.cg.project.services.TimeServiceImpl"></bean> -->
+		
+		<!--1st property -->
+		<!--<bean id="greetingService" class="com.cg.project.services.GreetingServiceImpl"><property name="timeService" ref="timeService"></property></bean> -->
+		
+		<!-- 2nd property-->
+		<!--<bean id="greetingService" class="com.cg.project.services.GreetingServiceImpl"><constructor-arg name="timeService" ref="timeService"></constructor-arg>
+		</bean> -->
+		
+		<!-- 3rd Property-->
+		<!-- <context:annotation-config/> -->
+		<!-- <bean id="greetingService" class="com.cg.project.services.GreetingServiceImpl" autowire="byName"/>-->
+	
+	
+		<!-- 4th property-->
+		<context:component-scan base-package="com.cg.project"/>
+
+</beans>

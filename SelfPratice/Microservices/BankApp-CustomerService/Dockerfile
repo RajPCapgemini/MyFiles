@@ -1,0 +1,4 @@
+FROM openjdk:17-alpine
+COPY target/customerserviceimage.jar customerserviceimage.jar
+EXPOSE 2222
+ENTRYPOINT ["java","-jar","/customerserviceimage.jar"]

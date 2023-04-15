@@ -1,0 +1,13 @@
+package com.cg.bankapp.exceptions;
+
+public class AccountDetailsNotFoundException extends Exception{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public AccountDetailsNotFoundException(String m) {
+		super(m);
+	}
+}

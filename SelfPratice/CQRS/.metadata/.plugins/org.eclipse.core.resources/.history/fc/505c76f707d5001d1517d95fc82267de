@@ -1,0 +1,18 @@
+package com.cg.bankapp.query.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.cg.bankapp.query.entities.Account;
+import com.cg.bankapp.query.repositories.AccountQueryRepository;
+
+public class AccountQueryServiceImpl implements AccountQueryService{
+	
+	@Autowired
+	private AccountQueryRepository repository;
+
+	@Override
+	public Account getAccountDetails(int accountNo) {
+		return repository.findById(accountNo).orElse(null);
+	}
+
+}

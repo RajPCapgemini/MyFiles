@@ -1,0 +1,26 @@
+package com.cg.bankapp.command.events;
+
+import org.axonframework.eventhandling.EventHandler;
+import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.cg.bankapp.query.entities.Transaction;
+import com.cg.bankapp.query.repositories.TransactionQueryRepository;
+
+@Component
+public class TransactionEventHandler {
+	
+	@Autowired
+	private TransactionQueryRepository repository;
+	
+	
+	@EventHandler
+	public Transaction transactionCreateEventHandler(TransactionCreateEvent event) {
+		Transaction transaction = new Transaction();
+		BeanUtils.copyProperties(event, transaction);
+		System.out.println("event: "+event.getTransactionId());
+		return repository.save(transaction);
+	}
+
+}

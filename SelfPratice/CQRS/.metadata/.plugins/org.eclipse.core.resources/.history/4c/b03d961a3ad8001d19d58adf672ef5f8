@@ -1,0 +1,35 @@
+package com.cg.bankapp.exceptionhandler;
+
+import org.axonframework.messaging.interceptors.ExceptionHandler;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+
+import com.cg.bankapp.exceptions.AccountDetailsNotFoundException;
+import com.cg.bankapp.exceptions.HighValueTransactionException;
+import com.cg.bankapp.exceptions.InvalidCustomerIdException;
+import com.cg.bankapp.exceptions.NegativeAmountException;
+
+@ControllerAdvice
+public class CustomExceptionHandler {
+
+	@ExceptionHandler
+	public ResponseEntity<String> handleAccountDetailsNotFoundException(AccountDetailsNotFoundException e) {
+		return new ResponseEntity<String>(e.getMessage(),HttpStatus.NOT_FOUND);
+	}
+	
+	@ExceptionHandler
+	public ResponseEntity<String> handleNegativeAmountException(NegativeAmountException e) {
+		return new ResponseEntity<String>(e.getMessage(),HttpStatus.NOT_FOUND);
+	}
+	
+	@ExceptionHandler
+	public ResponseEntity<String> handleHighValueTransactionException(HighValueTransactionException e) {
+		return new ResponseEntity<String>(e.getMessage(),HttpStatus.NOT_FOUND);
+	}
+	
+	@ExceptionHandler
+	public ResponseEntity<String> handlerInvalidCustomerIdException(InvalidCustomerIdException e) {
+		return new ResponseEntity<String>(e.getMessage(),HttpStatus.NOT_FOUND);
+	}
+}

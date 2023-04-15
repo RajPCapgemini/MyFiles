@@ -1,0 +1,5 @@
+package com.cg.bankapp.dtos;
+
+public class TransactionBetweenDatesDTO {
+
+}

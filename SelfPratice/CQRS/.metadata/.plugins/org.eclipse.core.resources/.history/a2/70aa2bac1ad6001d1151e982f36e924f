@@ -1,0 +1,5 @@
+package com.cg.bankapp.command.events;
+
+public class TransactionCreateEvent {
+
+}

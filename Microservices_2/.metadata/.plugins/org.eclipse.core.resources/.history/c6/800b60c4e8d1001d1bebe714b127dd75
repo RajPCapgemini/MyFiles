@@ -1,0 +1,32 @@
+server:
+  port: 1111
+  
+spring:
+  application:
+   name: BankApp-EurekaServer
+   
+#Service Discovery
+#By default, the registry also tries to register itself, so you need to disable that behavior as well.
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+#      
+#management:
+#  endpoint:
+#    health:
+#      show-details: always
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
+#        
+#logging:
+#  file:
+#    name: Account.log
+#  logback:
+#    rollingpolicy:
+#      max-history: 5
+#      max-file-size: 10MB

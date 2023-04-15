@@ -1,0 +1,222 @@
+2023-03-30 09:57:37,640 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-03-30 09:57:38,422 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Updating Gradle version information cache failed. Using outdated cache.
+2023-03-30 09:59:41,943 [Worker-8: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cg:CgOnlineShopSwagger:0.0.1-SNAPSHOT @ C:\Users\RAPRIYAD\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\CgOnlineShopSwagger\pom.xml.
+2023-03-30 09:59:43,486 [Worker-8: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /CgOnlineShopSwagger/src/main/java
+2023-03-30 09:59:43,486 [Worker-8: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /CgOnlineShopSwagger/src/main/resources
+2023-03-30 09:59:43,487 [Worker-8: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /CgOnlineShopSwagger/src/main/resources
+2023-03-30 09:59:43,488 [Worker-8: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /CgOnlineShopSwagger/src/test/java
+2023-03-30 09:59:43,932 [Worker-8: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 4 sec
+2023-03-30 09:59:44,974 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-03-30 09:59:45,006 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-30 09:59:45,012 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\CgOnlineShopSwagger\src\test\resources
+2023-03-30 10:01:45,509 [Worker-17: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cg:CgOnlineShopSwagger:0.0.1-SNAPSHOT @ C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\pom.xml.
+2023-03-30 10:01:46,053 [Worker-17: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /CgOnlineShopSwagger/src/main/java
+2023-03-30 10:01:46,053 [Worker-17: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /CgOnlineShopSwagger/src/main/resources
+2023-03-30 10:01:46,053 [Worker-17: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /CgOnlineShopSwagger/src/main/resources
+2023-03-30 10:01:46,054 [Worker-17: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /CgOnlineShopSwagger/src/test/java
+2023-03-30 10:01:46,333 [Worker-17: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 1 sec
+2023-03-30 10:01:46,697 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-03-30 10:01:46,711 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-30 10:01:46,714 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-03-30 10:23:35,236 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-30 10:23:35,237 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-30 10:23:35,240 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-03-30 10:52:59,307 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-30 10:52:59,308 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-30 10:52:59,315 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-03-30 10:53:44,241 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-30 10:53:44,242 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-30 10:53:44,252 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-03-30 16:02:16,863 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-30 16:02:16,865 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-30 16:02:16,870 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-03-30 16:03:06,995 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-30 16:03:06,996 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-30 16:03:06,998 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-03-30 16:03:12,936 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-30 16:03:12,936 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-30 16:03:12,943 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-03-30 16:03:22,336 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-30 16:03:22,337 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-30 16:03:22,343 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-03-30 16:12:35,845 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-30 16:12:35,846 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-30 16:12:35,848 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-03-31 00:42:05,944 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-31 00:42:05,946 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-31 00:42:05,949 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-03-31 00:42:27,064 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-31 00:42:27,066 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-31 00:42:27,071 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-03-31 12:07:48,065 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-03-31 12:12:41,362 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources
+2023-03-31 12:12:41,383 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-31 12:12:41,391 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-03-31 12:13:33,885 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-03-31 12:13:33,897 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-03-31 12:13:39,439 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-03-31 12:13:39,459 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-03-31 12:19:37,011 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-31 12:19:37,011 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-31 12:19:37,019 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-03-31 12:32:46,772 [Worker-15: Launching Executing clean in C__Users_RAPRIYAD_Documents_DevOps_CgOnlineShopSwagger] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger
+2023-03-31 12:32:46,779 [Worker-15: Launching Executing clean in C__Users_RAPRIYAD_Documents_DevOps_CgOnlineShopSwagger] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -Dstyle.color=always clean
+2023-03-31 12:42:11,605 [Worker-14: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-03-31 12:42:11,621 [Worker-14: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-03-31 12:43:12,943 [Worker-17: Launching Executing clean in C__Users_RAPRIYAD_Documents_DevOps_CgOnlineShopSwagger] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger
+2023-03-31 12:43:12,943 [Worker-17: Launching Executing clean in C__Users_RAPRIYAD_Documents_DevOps_CgOnlineShopSwagger] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -Dstyle.color=always clean
+2023-03-31 12:43:16,270 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources
+2023-03-31 12:43:16,275 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-31 12:43:16,278 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-03-31 14:03:30,555 [Worker-23: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cg:CgOnlineShopSwagger:0.0.1-SNAPSHOT @ C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\pom.xml.
+2023-03-31 14:03:31,687 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-31 14:03:31,688 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-31 14:03:31,694 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-03-31 14:03:56,004 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-31 14:03:56,004 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-31 14:03:56,008 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-03-31 17:17:40,400 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-03-31 17:17:40,435 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-31 17:17:40,439 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-03-31 17:17:43,063 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-03-31 17:17:43,074 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-31 17:17:43,078 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-03-31 17:18:52,504 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-31 17:18:52,504 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-31 17:18:52,508 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-03-31 17:19:28,020 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-31 17:19:28,021 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-31 17:19:28,024 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-03-31 17:19:35,295 [Worker-26: Launching Executing clean in C__Users_RAPRIYAD_Documents_DevOps_CgOnlineShopSwagger] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger
+2023-03-31 17:19:35,296 [Worker-26: Launching Executing clean in C__Users_RAPRIYAD_Documents_DevOps_CgOnlineShopSwagger] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -Dstyle.color=always clean
+2023-03-31 17:19:38,635 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources
+2023-03-31 17:19:38,646 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-31 17:19:38,650 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-03-31 17:25:20,618 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-31 17:25:20,618 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-31 17:25:20,623 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-03-31 17:25:26,973 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-31 17:25:26,974 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-31 17:25:26,977 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-03-31 17:27:03,021 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-31 17:27:03,022 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-31 17:27:03,027 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-03-31 17:28:07,843 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-31 17:28:07,844 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-31 17:28:07,848 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-03-31 17:31:14,585 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2023-03-31 17:31:57,218 [Worker-36: Launching CgOnlineShopSwagger] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger
+2023-03-31 17:31:57,218 [Worker-36: Launching CgOnlineShopSwagger] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -Dstyle.color=always package -Dmaven.test.skip
+2023-03-31 17:31:57,342 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources
+2023-03-31 17:31:57,348 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-31 17:31:57,352 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-03-31 17:32:17,425 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources
+2023-03-31 17:32:17,435 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-31 17:32:17,441 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-03-31 17:52:28,668 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-03-31 17:52:28,692 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-31 17:52:28,695 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-03-31 18:00:07,689 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-31 18:00:07,690 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-31 18:00:07,695 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-03-31 18:00:08,716 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-31 18:00:08,716 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-31 18:00:08,721 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-04-01 11:23:09,963 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources
+2023-04-01 11:23:09,968 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-01 11:23:09,971 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-04-01 11:24:27,530 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-01 11:24:27,545 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-01 11:24:27,548 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-04-01 11:25:52,922 [Worker-46: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cg:CgOnlineShopSwagger:0.0.1-SNAPSHOT @ C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\pom.xml.
+2023-04-01 11:25:53,388 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-01 11:25:53,389 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-01 11:25:53,391 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-04-01 11:25:55,644 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-01 11:25:55,645 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-01 11:25:55,646 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-04-01 11:26:36,212 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources
+2023-04-01 11:26:36,226 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-01 11:26:36,229 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-04-01 11:40:34,417 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-01 11:40:34,418 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-01 11:40:34,420 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-04-01 11:45:11,916 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-01 11:45:11,922 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-01 11:45:11,924 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-04-01 11:46:08,548 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-01 11:46:08,553 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-01 11:46:08,556 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-04-01 11:48:57,085 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-01 11:48:57,085 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-01 11:48:57,087 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-04-01 12:09:04,552 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-01 12:09:04,559 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-01 12:09:04,564 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-04-01 12:09:05,579 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-01 12:09:05,579 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-01 12:09:05,581 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-04-01 12:11:15,192 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-01 12:11:15,192 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-01 12:11:15,195 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-04-01 12:19:09,093 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-01 12:19:09,094 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-01 12:19:09,096 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-04-01 12:19:10,167 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-01 12:19:10,167 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-01 12:19:10,169 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-04-01 12:19:11,987 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-01 12:19:11,987 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-01 12:19:11,989 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-04-01 12:30:08,834 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-01 12:30:08,844 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-01 12:30:08,846 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-04-01 12:38:58,818 [Worker-70: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-01 12:38:58,828 [Worker-70: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-01 12:38:58,831 [Worker-70: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-04-01 12:39:11,543 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-01 12:39:11,543 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-01 12:39:11,546 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-04-01 12:40:55,138 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-01 12:40:55,138 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-01 12:40:55,140 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-04-01 13:03:13,435 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-01 13:03:13,435 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-01 13:03:13,437 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-04-01 13:03:18,553 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-01 13:03:18,553 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-01 13:03:18,555 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-04-01 13:03:29,262 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-01 13:03:29,272 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-01 13:03:29,274 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-04-01 13:04:52,771 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-01 13:04:52,771 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-01 13:04:52,775 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-04-01 13:06:03,647 [Worker-80: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources
+2023-04-01 13:06:03,656 [Worker-80: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-01 13:06:03,658 [Worker-80: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-04-03 09:13:04,496 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-04-03 13:01:25,406 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-04-06 21:52:42,504 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-04-06 22:21:51,136 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources
+2023-04-06 22:21:51,158 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-06 22:21:51,163 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-04-06 23:12:05,247 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-06 23:12:05,248 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-06 23:12:05,252 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-04-07 10:08:38,611 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-04-07 11:06:52,697 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-04-08 11:26:40,589 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-04-08 11:26:44,163 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources
+2023-04-08 11:26:44,180 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-08 11:26:44,186 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-04-08 11:27:07,452 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-08 11:27:07,455 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-08 11:27:07,458 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-04-08 12:04:01,220 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-08 12:04:01,223 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-08 12:04:01,227 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-04-08 12:04:10,194 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-08 12:04:10,195 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-08 12:04:10,198 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\RAPRIYAD\Documents\DevOps\CgOnlineShopSwagger\src\test\resources
+2023-04-12 03:09:48,537 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

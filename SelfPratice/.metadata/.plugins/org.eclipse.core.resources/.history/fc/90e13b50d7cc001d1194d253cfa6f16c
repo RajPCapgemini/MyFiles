@@ -1,0 +1,10 @@
+#Spring properties
+spring:
+  application:
+    name: accounts-service
+    
+#Discovery Server Access
+      
+      
+server:
+  port: 2222

@@ -1,0 +1,37 @@
+server:
+  port: 5555
+  servlet:
+    context-path: /api-gateway
+
+spring:
+  application:
+    name: BankApp-API-Gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+      - id: BankApp-CustomerSerivce
+        uri: lb://BankApp-CustomerService/
+        predicates:
+        - Path=/customer/**
+        
+      - id: BankApp-AccountSerivce
+        uri: lb://BankApp-AccountService/
+        predicates:
+        - Path=/account/**
+        
+      - id: BankApp-TransactionSerivce
+        uri: lb://BankApp-TransactionService/
+        predicates:
+        - Path=/transaction/**
+        
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true          

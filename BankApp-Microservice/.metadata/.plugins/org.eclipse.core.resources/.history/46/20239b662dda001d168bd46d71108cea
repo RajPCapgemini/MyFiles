@@ -1,0 +1,46 @@
+server:
+  port: 5555
+
+spring:
+  application:
+    name: BankApp-API-Gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+      - id: authserver
+        uri: lb://AUTH-SERVER
+        predicates:
+        - Path=/auth/**
+      - id: BankApp-CustomerSerivce
+        uri: lb://BankApp-CustomerService/
+        predicates:
+        - Path=/customer/**
+        filters:
+        - AuthenticationFilter
+        
+      - id: BankApp-AccountSerivce
+        uri: lb://BankApp-AccountService/
+        predicates:
+        - Path=/account/**
+        filters:
+        - AuthenticationFilter
+        
+      - id: BankApp-TransactionSerivce
+        uri: lb://BankApp-TransactionService/
+        predicates:
+        - Path=/transaction/**
+        filters:
+        - AuthenticationFilter
+        
+        
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eurekaserver-container/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    hostname: localhost         

@@ -1,0 +1,26 @@
+server:
+  port: 3333
+  servlet:
+    context-path: "/account"
+  
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/bankAppAccountDB
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+       hibernate:
+            dialect: org.hibernate.dialect.MySQL5Dialect
+            
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: true
+    fetch-registry: true

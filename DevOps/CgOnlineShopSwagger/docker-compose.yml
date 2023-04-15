@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+  mysqldb-service:
+    container_name: mysqldb-docker-container
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: onlineshopdb
+    networks:
+      springboot-mysql-net:
+
+  onlineshopappcontainer-service:
+    container_name: Onlineshopdockercontainer
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "4444:4444"
+    depends_on:
+      - mysqldb-service
+    networks:
+      springboot-mysql-net:
+    restart: on-failure
+
+networks:
+  springboot-mysql-net:

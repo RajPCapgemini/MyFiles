@@ -1,0 +1,45 @@
+package com.cg.bankapp.command.aggregate;
+
+import java.time.LocalDateTime;
+
+import org.axonframework.commandhandling.CommandHandler;
+import org.axonframework.eventsourcing.EventSourcingHandler;
+import org.axonframework.modelling.command.AggregateIdentifier;
+import org.axonframework.modelling.command.AggregateLifecycle;
+import org.axonframework.spring.stereotype.Aggregate;
+import org.springframework.beans.BeanUtils;
+
+import com.cg.bankapp.command.TransactionCreateCommand;
+import com.cg.bankapp.command.events.TransactionCreateEvent;
+
+import lombok.Data;
+
+@Aggregate
+@Data
+public class TransactionCommandAggregate {
+	
+	@AggregateIdentifier
+	private String uid;
+	private int transactionId;
+	private String transactionType;
+	private LocalDateTime transactionDate;
+	private double transactionAmount;
+	private int accountNo;
+
+	@CommandHandler
+	public TransactionCommandAggregate(TransactionCreateCommand command) {
+		TransactionCreateEvent event = new TransactionCreateEvent();
+		BeanUtils.copyProperties(command, event);
+		AggregateLifecycle.apply(event);
+	}
+	
+	@EventSourcingHandler
+	public void TransactionEventSourcingHandler(TransactionCreateEvent event) {
+		this.uid=event.getUid();
+		this.transactionId=event.getTransactionId();
+		this.transactionType=event.getTransactionType();
+		this.transactionDate=event.getTransactionDate();
+		this.transactionAmount=event.getTransactionAmount();
+		this.accountNo=event.getAccountNo();
+	}
+}

@@ -1,0 +1,8 @@
+package com.cg.bankapp.dtos;
+
+public class FundTransferDTO {
+
+	private int fromAccountNo;
+	private int toAccountNo;
+	private double amount;
+}

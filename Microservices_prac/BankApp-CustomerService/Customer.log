@@ -1,0 +1,12 @@
+2023-04-04T08:54:47.563+05:30  WARN 6452 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14h1m56s76ms774µs500ns).
+2023-04-04T08:55:17.432+05:30  INFO 6452 --- [RMI TCP Connection(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-04-04T08:55:17.432+05:30  INFO 6452 --- [RMI TCP Connection(8)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application BANKAPP-CUSTOMERSERVICE with eureka with status DOWN
+2023-04-04T08:55:17.432+05:30  INFO 6452 --- [RMI TCP Connection(8)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1680578717432, current=DOWN, previous=UP]
+2023-04-04T08:55:17.432+05:30  INFO 6452 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKAPP-CUSTOMERSERVICE/LIN51017252.corp.capgemini.com:BankApp-CustomerService:2222: registering service...
+2023-04-04T08:55:17.448+05:30  INFO 6452 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKAPP-CUSTOMERSERVICE/LIN51017252.corp.capgemini.com:BankApp-CustomerService:2222 - registration status: 204
+2023-04-04T08:55:17.448+05:30  INFO 6452 --- [RMI TCP Connection(8)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-04T08:55:17.448+05:30  INFO 6452 --- [RMI TCP Connection(8)-127.0.0.1] o.a.c.c.C.[.[localhost].[/customer]      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-04T08:55:17.464+05:30  INFO 6452 --- [RMI TCP Connection(8)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-04T08:55:17.472+05:30  INFO 6452 --- [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-04T08:55:17.480+05:30  INFO 6452 --- [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-04T08:55:17.480+05:30  INFO 6452 --- [RMI TCP Connection(8)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...

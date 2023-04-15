@@ -1,0 +1,60 @@
+server:
+  port: 2222
+  servlet:
+    context-path: "/customer"
+ 
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:9090
+        instance:
+          prefer-ip: true
+  application:
+    name: BankApp-CustomerService
+    
+  datasource:
+    url: jdbc:mysql://localhost:3306/bankApp-Customer-DB?createDatabaseIfNotExist=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+ 
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: create
+    properties:
+       hibernate:
+            dialect: org.hibernate.dialect.MySQLDialect
+                                      
+eureka:
+  client:
+    service-url : 
+            defaultZone: http://localhost:1111/eureka/          
+            
+    register-with-eureka: true
+    fetch-registry: true 
+ 
+  instance:
+    prefer-ip-address: true
+    
+axon:
+  eventhandling:
+    processors:
+      name:
+        mode: tracking
+        
+  distributed:
+    enabled: true
+    
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+        
+
+ 

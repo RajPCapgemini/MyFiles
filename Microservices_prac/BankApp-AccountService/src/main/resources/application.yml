@@ -1,0 +1,80 @@
+server:
+  port: 3333
+  servlet:
+    context-path: /account
+  
+
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:9090
+        instance:
+          prefer-ip: true
+  application:
+    name: BankApp-AccountService
+  datasource:
+    url: jdbc:mysql://localhost:3306/bankAppAccountDB
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+       hibernate:
+            dialect: org.hibernate.dialect.MySQL5Dialect
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:1111/eureka
+      
+      
+resilience4j:
+  circuitbreaker:
+    instances:
+      transactionBreaker:
+        register-health-indicator: true
+        event-consumer-buffer-size: 10
+        failure-rate-threshold: 50
+        minimum-number-of-calls: 5
+        automatic-transition-from-open-to-half-open-enabled: true
+        wait-duration-in-open-state: 6s
+        permitted-number-of-calls-in-half-open-state: 3
+        sliding-window-size: 10
+        sliding-window-type: count-based
+        
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+        
+logging:
+  level:
+    ROOT: INFO
+    org:
+      springframework:
+        orm:
+          jpa: DEBUG
+        transaction: DEBUG
+      hibernate:
+        engine:
+          transaction:
+            internal:
+              TransactionalImpl: DEBUG
+  file:
+    name: Account.log
+  logback:
+    rollingpolicy:
+      max-history: 5
+      max-file-size: 10MB

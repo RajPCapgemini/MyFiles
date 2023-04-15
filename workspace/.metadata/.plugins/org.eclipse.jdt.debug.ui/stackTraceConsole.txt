@@ -1,0 +1,4 @@
+ApplicationContext context = new ClassPathXmlApplicationContext();
+		
+		HotelService hotelService = context.getBean(HotelService.class,"hotelService");
+		KitchenService kitchenService = context.getBean(KitchenService.class,"kitchenService");

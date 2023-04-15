@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\RAPRIYAD\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\com.bankJPA"/>
+			<item value="C:\StsGit\com.JDBC"/>
+			<item value="C:\Users\RAPRIYAD\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\com.JDBC"/>
+			<item value="C:\Users\RAPRIYAD\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\com.multithreading\src\main\java\com\client\CounterService.java"/>
+			<item value="C:\Users\RAPRIYAD\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\com.bankArrayList"/>
+			<item value="C:\Users\RAPRIYAD\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\com.generics.collections"/>
+			<item value="C:\Users\RAPRIYAD\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\MavenPractice"/>
+			<item value="C:\Users\RAPRIYAD\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\EmployeeMaven"/>
+			<item value="C:\Users\RAPRIYAD\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\Practice\src\com\practice\service\ArraySort.java"/>
+			<item value="C:\Users\RAPRIYAD\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\School"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="com.cg"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="BankSpringORM"/>
+			<item value="BankJPASprinORM"/>
+			<item value="SpringDemo3"/>
+			<item value="SpringDemo2"/>
+			<item value="SpringDemo1"/>
+			<item value="com.prototype"/>
+			<item value="com.builder"/>
+			<item value="com.factory"/>
+			<item value="com.singleton"/>
+			<item value="com.bankJPA"/>
+			<item value="com.JPA"/>
+			<item value="com.exampleJdbc"/>
+			<item value="com.BankJdbc"/>
+			<item value="com.mycompanydb"/>
+			<item value="com.JDBC"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item key="width" value="480"/>
+		<item key="height" value="667"/>
+		<item key="x" value="720"/>
+		<item key="y" value="66"/>
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\RAPRIYAD\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\SpringDemo3"/>
+			<item value="C:\Users\RAPRIYAD\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\SpringDemo2"/>
+			<item value="C:\Users\RAPRIYAD\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\SpringDemo1"/>
+			<item value="C:\Users\RAPRIYAD\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\BankSpringData"/>
+			<item value="C:\Users\RAPRIYAD\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\BankSpringORM"/>
+			<item value="C:\Users\RAPRIYAD\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\BankSpringRestAPI"/>
+			<item value="C:\Users\RAPRIYAD\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\ConfigClient-1"/>
+			<item value="C:\Users\RAPRIYAD\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\ConfigServer"/>
+			<item value="C:\Users\RAPRIYAD\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\BankServer"/>
+			<item value="C:\Users\RAPRIYAD\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\CgOnlineShopSwagger"/>
+			<item value="C:\Users\RAPRIYAD\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\OnlineShopSpringRestAPI"/>
+			<item value="C:\Users\RAPRIYAD\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\CgOnlineShopApp"/>
+			<item value="C:\Users\RAPRIYAD\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\OnlineShopSpringData"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,31 @@
+'-':
+- 'id: BankApp-CustomerSerivce'
+- Path=/customer/**
+- 'id: BankApp-AccountSerivce'
+- Path=/account/**
+- 'id: BankApp-TransactionSerivce'
+- Path=/transaction/**
+application: ''
+client: ''
+cloud: ''
+defaultZone: http://localhost:3333/eureka/
+discovery: ''
+enabled: true
+eureka: ''
+fetch-registry: true
+gateway: ''
+instance: ''
+locator: ''
+name: BankApp-API-Gateway
+port: 2222
+predicates: ''
+prefer-ip-address: 'true          '
+register-with-eureka: true
+routes: ''
+server: ''
+service-url: ''
+spring: ''
+uri:
+- lb://BankApp-CustomerService/
+- lb://BankApp-AccountService/
+- lb://BankApp-TransactionService/

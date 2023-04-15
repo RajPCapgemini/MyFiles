@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+	<bean id="localAddress" class="com.cg.project.beans.Address">
+		<property name="pincode" value="4556"></property>
+		<property name="city" value="Pune"></property>
+	</bean>
+	<bean id="permanentAddress" class="com.cg.project.beans.Address">
+		<property name="pincode" value="6556"></property>
+		<property name="city" value="Mumbai"></property>
+	</bean>
+	<bean id="student" class="com.cg.project.beans.Student">
+		<property name="id" value="123"/>
+		<property name="firstName" value="Raj"/>
+		<property name="lastName" value="Priyadarshi"/>
+		<property name="marks">
+			<list>
+				<value>66</value>
+				<value>55</value>
+				<value>67</value>
+				<value>75</value>
+			</list>
+		</property>
+		<property name="address">
+			<map>
+				<entry key="localAddress" value-ref="localAddress"></entry>
+				<entry key="permanentAddress" value-ref="permanentAddress"></entry>
+			</map>
+		</property>
+	</bean>
+	
+
+</beans>

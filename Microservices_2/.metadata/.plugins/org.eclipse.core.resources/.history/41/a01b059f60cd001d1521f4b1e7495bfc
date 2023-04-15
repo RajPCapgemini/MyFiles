@@ -1,0 +1,65 @@
+package com.cg.bankapp.dto;
+
+import java.time.LocalDateTime;
+
+public class TransactionDto {
+
+	private LocalDateTime date;
+	private String transactionType;
+	private double transactionAmount;
+	private int accountNo;
+	
+	public TransactionDto() {
+		super();
+	}
+
+	public TransactionDto(LocalDateTime date, String transactionType, double transactionAmount,
+			int accountNo) {
+		super();
+		this.date = date;
+		this.transactionType = transactionType;
+		this.transactionAmount = transactionAmount;
+		this.accountNo = accountNo;
+	}
+
+	public LocalDateTime getdate() {
+		return date;
+	}
+
+	public void setdate(LocalDateTime date) {
+		this.date = date;
+	}
+
+	public String getTransactionType() {
+		return transactionType;
+	}
+
+	public void setTransactionType(String transactionType) {
+		this.transactionType = transactionType;
+	}
+
+	public double getTransactionAmount() {
+		return transactionAmount;
+	}
+
+	public void setTransactionAmount(double transactionAmount) {
+		this.transactionAmount = transactionAmount;
+	}
+
+	public int getAccountNo() {
+		return accountNo;
+	}
+
+	public void setAccountNo(int accountNo) {
+		this.accountNo = accountNo;
+	}
+
+	@Override
+	public String toString() {
+		return "TransactionDto [date=" + date + ", transactionType=" + transactionType
+				+ ", transactionAmount=" + transactionAmount + ", accountNo=" + accountNo + "]";
+	}
+	
+	
+
+}

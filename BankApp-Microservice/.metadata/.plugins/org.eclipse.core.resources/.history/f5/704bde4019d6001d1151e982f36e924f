@@ -1,0 +1,17 @@
+package com.cg.bankapp.command.service;
+
+import org.axonframework.commandhandling.gateway.CommandGateway;
+
+import com.cg.bankapp.command.entities.Transaction;
+
+public class TransactionCommandServiceImpl implements TransactionCommandService{
+	
+	private CommandGateway commandGateway;
+
+	@Override
+	public Transaction addTransactionDetails(Transaction transaction) {
+		
+		return null;
+	}
+
+}

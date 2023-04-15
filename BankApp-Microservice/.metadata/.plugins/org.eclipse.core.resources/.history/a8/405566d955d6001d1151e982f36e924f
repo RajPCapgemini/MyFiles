@@ -1,0 +1,8 @@
+package com.cg.bankapp.query.services;
+
+import com.cg.bankapp.query.entities.Transaction;
+
+public interface TransactionQueryService {
+
+	public Transaction getAllTransactionDetails(int accountNo);
+}

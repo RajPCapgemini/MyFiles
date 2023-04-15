@@ -1,0 +1,33 @@
+package com.client;
+
+class Account{
+	int accId;
+	String name;
+	double balance;
+	
+	public Account() {
+		
+	}
+	public void deposit(double amount) {
+		this.balance+=amount;
+	}
+	public void withdraw(double amount) {
+		this.balance-=amount;
+	}
+	public Account(int accId, String name, double balance) {
+		super();
+		this.accId = accId;
+		this.name = name;
+		this.balance = balance;
+	}
+	
+}
+
+public class AccountDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

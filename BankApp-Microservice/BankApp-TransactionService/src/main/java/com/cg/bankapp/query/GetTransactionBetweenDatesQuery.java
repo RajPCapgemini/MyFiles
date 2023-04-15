@@ -1,0 +1,30 @@
+package com.cg.bankapp.query;
+
+import java.time.LocalDateTime;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class GetTransactionBetweenDatesQuery {
+
+	private String uid;
+	private int transactionId;
+	private String transactionType;
+	private LocalDateTime transactionDate;
+	private double transactionAmount;
+	private int accountNo;
+	private LocalDateTime startDate,endDate;
+	
+	public GetTransactionBetweenDatesQuery(int accountNo,LocalDateTime startDate,LocalDateTime endDate) {
+		super();
+		this.accountNo=accountNo;
+		this.startDate=startDate;
+		this.endDate=endDate;
+	}
+}

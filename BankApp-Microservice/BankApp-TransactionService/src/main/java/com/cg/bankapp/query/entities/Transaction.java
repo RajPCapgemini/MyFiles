@@ -1,0 +1,28 @@
+package com.cg.bankapp.query.entities;
+
+import java.time.LocalDateTime;
+
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity(name = "Transaction_Query")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Transaction {
+
+	@Column(unique = true)
+	private String uid;
+	
+	@Id
+	private int transactionId;
+	private String transactionType;
+	private LocalDateTime transactionDate;
+	private double transactionAmount;
+	private int accountNo;
+}

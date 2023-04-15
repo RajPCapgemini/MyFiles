@@ -1,0 +1,27 @@
+package com.cg.bankapp.command.aggregate;
+
+import org.axonframework.commandhandling.CommandHandler;
+import org.axonframework.modelling.command.AggregateIdentifier;
+import org.axonframework.modelling.command.AggregateLifecycle;
+import org.axonframework.spring.stereotype.Aggregate;
+import org.springframework.beans.BeanUtils;
+
+import com.cg.bankapp.command.AccountCreateCommand;
+import com.cg.bankapp.command.events.AccountCreateEvent;
+
+@Aggregate
+public class AccountAggregate {
+
+	@AggregateIdentifier
+	private String uid;
+	private int id;
+	private double balance;
+	private int customerId;
+	
+	@CommandHandler
+	public AccountAggregate(AccountCreateCommand accountCommand) {
+		AccountCreateEvent accountCreateEvent = new AccountCreateEvent();
+		BeanUtils.copyProperties(accountCommand, accountCreateEvent);
+		AggregateLifecycle.apply(accountCreateEvent);
+	}
+}

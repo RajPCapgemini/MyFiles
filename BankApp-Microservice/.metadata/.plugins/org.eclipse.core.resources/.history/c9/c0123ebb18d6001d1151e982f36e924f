@@ -1,0 +1,11 @@
+package com.cg.bankapp.command.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class TransactionCommandController {
+
+	public ResponseEntity<TransactionDTO> addTransactionDetails(@RequestBody TransactionDTO transactionDTO){
+		
+	}
+}

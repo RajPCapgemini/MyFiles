@@ -1,0 +1,61 @@
+server:
+  port: 3333
+  servlet:
+    context-path: /account
+ 
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:9090
+        instance:
+          prefer-ip: true
+  application:
+    name: BankApp-AccountService
+    
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://mysqldb-docker-container:3306/bankApp-Account-Command-DB?createDatabaseIfNotExist=true
+    username: root
+    password: root
+ 
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: create
+    properties:
+       hibernate:
+            dialect: org.hibernate.dialect.MySQL8Dialect
+                                      
+eureka:
+  client:
+    service-url : 
+            defaultZone: http://localhost:1111/eureka/          
+            
+    register-with-eureka: true
+    fetch-registry: true 
+ 
+  instance:
+    prefer-ip-address: true
+    
+axon:
+  eventhandling:
+    processors:
+      name:
+        mode: tracking
+        source: eventBus
+        
+  distributed:
+    enabled: true
+    
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+        
+
+ 

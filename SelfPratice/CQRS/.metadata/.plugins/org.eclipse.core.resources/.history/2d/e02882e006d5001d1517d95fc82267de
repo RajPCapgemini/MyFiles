@@ -1,0 +1,6 @@
+package com.cg.bankapp.query.services;
+
+public interface AccountQueryService {
+
+	public Account getAccountDetails()
+}

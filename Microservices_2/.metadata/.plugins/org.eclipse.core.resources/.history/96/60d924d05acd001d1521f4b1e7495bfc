@@ -1,0 +1,21 @@
+server:
+  port: 5556
+  
+
+spring:
+  application:
+    name: BankApp-TransactionService
+  datasource:
+    url: jdbc:mysql://localhost:3306/bankAppTransactionDB
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+    
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    properties:
+       hibernate:
+            dialect: org.hibernate.dialect.MySQL5Dialect
+            

@@ -1,0 +1,9 @@
+package com.cg.bankapp.command.events;
+
+import lombok.Data;
+
+@Data
+public class TransactionEntryFailedEvent {
+
+	private String uid;
+}

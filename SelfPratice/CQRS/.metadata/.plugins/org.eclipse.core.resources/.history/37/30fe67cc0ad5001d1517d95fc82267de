@@ -1,0 +1,19 @@
+package com.cg.bankapp.query.projections;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.cg.bankapp.query.GetAccountByIdQuery;
+import com.cg.bankapp.query.entities.Account;
+import com.cg.bankapp.query.repositories.AccountQueryRepository;
+
+@Component
+public class AccountProjection {
+
+	@Autowired
+	private AccountQueryRepository repository;
+	
+	public Account handleGetAccountByIdQuery(GetAccountByIdQuery accountQuery) {
+		return repository.findById(accountQuery.getAccountNo()).orElse(null);
+	}
+}

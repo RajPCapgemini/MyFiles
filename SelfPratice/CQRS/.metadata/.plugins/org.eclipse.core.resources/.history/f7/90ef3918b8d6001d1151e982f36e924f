@@ -1,0 +1,73 @@
+package com.cg.bankapp.command.service;
+
+import java.util.UUID;
+
+import org.axonframework.commandhandling.gateway.CommandGateway;
+import org.axonframework.messaging.responsetypes.ResponseTypes;
+import org.axonframework.queryhandling.QueryGateway;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.cg.bankapp.command.AccountCreateCommand;
+import com.cg.bankapp.command.AccountUpdateCommand;
+import com.cg.bankapp.command.entities.Account;
+import com.cg.bankapp.command.repositories.AccountCommandRepository;
+import com.cg.bankapp.query.GetAccountByIdQuery;
+
+@Component
+public class AccountCommandServiceImpl implements AccountCommandService{
+	
+	@Autowired
+	private CommandGateway commandGateway;
+	
+	@Autowired
+	private QueryGateway queryGateway;
+	
+	@Autowired
+	private AccountCommandRepository repository;
+
+	@Override
+	public Account addAccountDetails(Account account) {
+		account = repository.save(account);
+		AccountCreateCommand accountCommand = AccountCreateCommand.builder()
+				.uid(UUID.randomUUID().toString())
+				.accountNo(account.getAccountNo())
+				.balance(account.getBalance())
+				.customerId(account.getCustomerId())
+				.build();
+		commandGateway.sendAndWait(accountCommand);
+		return account;
+	}
+
+	@Override
+	public Account withdrawAmount(int accountNo, double amount) {
+		Account account = getAccountDetails(accountNo);
+		account.setBalance(account.getBalance()-amount);
+		AccountUpdateCommand command = AccountUpdateCommand.builder()
+				.uid(UUID.randomUUID().toString())
+				.accountNo(accountNo)
+				.balance(account.getBalance())
+				.customerId(account.getCustomerId())
+				.build();
+		return repository.save(account);
+	}
+
+	private Account getAccountDetails(int accountNo) {
+		return queryGateway.query(new GetAccountByIdQuery(accountNo), ResponseTypes.instanceOf(Account.class)).join();
+	}
+
+	@Override
+	public Account depositAmount(int accountNo, double amount) {
+		Account account = getAccountDetails(accountNo);
+		account.setBalance(account.getBalance()+amount);
+		return repository.save(account);
+	}
+
+	@Override
+	public double fundTransfer(int accountNoFrom, int accountNoTo, double amount) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	
+}

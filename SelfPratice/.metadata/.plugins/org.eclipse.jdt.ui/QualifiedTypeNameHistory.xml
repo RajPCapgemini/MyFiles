@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.gSchedule.service.GameSchedulerServiceInt"/>
+    <fullyQualifiedTypeName name="com.gSchedule.service.GameSchedulerServiceImpl"/>
+    <fullyQualifiedTypeName name="com.gSchedule.dao.GameSchedulerDaoInt"/>
+    <fullyQualifiedTypeName name="com.gSchedule.dao.GameSchedulerDaoImpl"/>
+    <fullyQualifiedTypeName name="com.gSchedule.util.GameScheduleUtil"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="java.util.Map.Entry"/>
+    <fullyQualifiedTypeName name="org.springframework.cloud.config.server.EnableConfigServer"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.cloud.netflix.eureka.server.EnableEurekaServer"/>
+    <fullyQualifiedTypeName name="org.springframework.cloud.client.discovery.EnableDiscoveryClient"/>
+</qualifiedTypeNameHistroy>

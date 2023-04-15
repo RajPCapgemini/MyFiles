@@ -1,0 +1,21 @@
+package com.cg.bankapp.command.events;
+
+import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.cg.bankapp.query.entities.Account;
+import com.cg.bankapp.query.repositories.AccountQueryRepository;
+
+@Component
+public class AccountEventHandler {
+
+	@Autowired
+	private AccountQueryRepository repository;
+	
+	public Account accountCreateEventHandler(AccountCreateEvent accountCreateEvent) {
+		Account account = new Account();
+		BeanUtils.copyProperties(accountCreateEvent, account);
+		repository.save(account);
+	}
+}

@@ -1,0 +1,12 @@
+package com.cg.bankapp.dtos;
+
+import java.time.LocalDateTime;
+
+public class TransactionDTO {
+
+	private int transactionId;
+	private String transactionType;
+	private LocalDateTime transactionDate;
+	private double transactionAmount;
+	private int accountNo;
+}

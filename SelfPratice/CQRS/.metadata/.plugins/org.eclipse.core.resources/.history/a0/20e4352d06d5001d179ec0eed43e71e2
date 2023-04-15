@@ -1,0 +1,5 @@
+package com.cg.bankapp.query.controller;
+
+public class AccountQueryController {
+
+}

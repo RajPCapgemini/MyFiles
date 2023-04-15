@@ -1,0 +1,5 @@
+package com.cg.bankapp.config;
+
+public class CustomConfig {
+
+}

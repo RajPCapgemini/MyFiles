@@ -1,0 +1,42 @@
+client: ''
+defaultZone: 'http://localhost:1111/eureka/          '
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+fetch-registry: 'true '
+instance: ''
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+prefer-ip-address: true
+register-with-eureka: true
+server:
+  port: 9012
+  servlet:
+    context-path: /auth
+service-url: ''
+spring:
+  application:
+    name: auth-server
+  boot:
+    admin:
+      client:
+        url: http://localhost:9099
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: root
+    url: jdbc:mysql://localhost:3306/bankserver_auth?createDatabaseIfNotExist=true
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    show-sql: true
